@@ -14,7 +14,7 @@ This project requires two layers to be running in order to work: the Ethereum ne
 
 ## Installation
 ```sh
-$ git clone git@github.com:nlaz/mlh-localhost-quorum.git
+$ git clone git@github.com:MLH/mlh-localhost-cryptohackers.git
 $ cd mlh-localhost-quorum
 ```
 
