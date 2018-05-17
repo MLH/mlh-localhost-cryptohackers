@@ -33,7 +33,16 @@ $ npm install
 
 ## Running
 
-To get your CryptoHackers application up and running locally, you will need to compile your contracts, migrate those contracts to the network, populate those contracts with data, then run your application:
+To get your CryptoHackers application up and running locally, you will need to run the Quorum network, compile your contracts, migrate those contracts to the network, populate those contracts with data, then run your application:
+
+### Quorum network
+
+```sh
+$ docker pull mlhacks/mlh-localhost-quorum-network
+$ docker run -it -p 22000:22000 -p 22001:22001 -p 22002:22002 mlhacks/mlh-localhost-quorum-network
+```
+
+### CryptoHackers
 
 ```sh
 $ truffle compile
