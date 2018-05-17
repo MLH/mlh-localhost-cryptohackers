@@ -27,7 +27,7 @@ We use Quorum as our Ethereum protocol in this project. We use a version of Quor
 
 ```sh
 $ git clone git@github.com:MLH/mlh-localhost-cryptohackers.git
-$ cd mlh-localhost-quorum-cryptohackers
+$ cd mlh-localhost-cryptohackers
 $ npm install
 ```
 
