@@ -1,20 +1,20 @@
 # MLH Localhost: Intro to Ethereum apps Powered by Quorum
 
-This repository contains the code for an example Quorum network for the **MLH Localhost: Intro to Ethereum apps Powered by Quorum workshop**.
+This repository contains the code for an example Quorum network for the **Blockchain Basics: An Introduction to J.P. Morgan's Quorum**.
 
-This project is **one of two parts** required for the **Intro to Ethereum workshop**. This repository contains the code to run [CryptoHackers](https://github.com/MLH/mlh-localhost-cryptohackers) which runs the application layer. The second part needed is [Quorum Network](https://github.com/MLH/mlh-localhost-quorum-network) which runs the Ethereum network layer.
+This project is **one of two parts** required for the **Quorum workshop**. This repository contains the code to run [TechMarketplace](https://github.com/MLH/mlh-localhost-tech-marketplace) which runs the application layer. The second part needed is [Quorum Network](https://github.com/MLH/mlh-localhost-quorum-network) which runs the Ethereum network layer.
 
-### CryptoHackers [[Docs](https://github.com/MLH/mlh-localhost-cryptohackers)]
+### TechMarketplace [[Docs](https://github.com/MLH/mlh-localhost-tech-marketplace)]
 
-CryptoHackers is an example application running on top of the Quorum network and allows users to buy and sell virtual hackathon gear. It demonstrates how to run an simple Ethereum application and how to write simple Smart Contracts that interact with the Ethereum-based network.
+TechMarketplace is an example application running on top of the Quorum network and allows users to buy and sell virtual hackathon gear. It demonstrates how to run an simple Ethereum application and how to write simple Smart Contracts that interact with the Ethereum-based network.
 
 ### Quorum Network [[Docs](https://github.com/MLH/mlh-localhost-quorum-network)]
 
-[Quorum](https://github.com/jpmorganchase/quorum) is an protocol designed by JP Morgan chase to address the lack of data privacy on Ethereum platforms. With this, Quorum features a couple enhancements including private transactions/contracts, new consensus mechanims, and higher performance. It is a fork of the [go-ethereum](https://github.com/ethereum/go-ethereum) protocol and is updated with go-etherum releases.
+[Quorum](https://github.com/jpmorganchase/quorum) is an protocol designed by JP Morgan chase to address the lack of data privacy on Ethereum platforms. With this, Quorum features several enhancements including private transactions/contracts, new consensus mechansims, and higher performance. It is a fork of the [go-ethereum](https://github.com/ethereum/go-ethereum) protocol and is updated with go-etherum releases.
 
 We use Quorum as our Ethereum protocol in this project. We use a version of Quorum's [7nodes](https://github.com/jpmorganchase/quorum-examples/tree/master/examples/7nodes) example that runs several Quorum nodes in parallel using a virtual machine.
 
-**Important note** A Quorum network must be running locally in order for the CryptoHacker application to work. This project includes instructions on how to run the Quorum network locally.
+**Important note** A Quorum network must be running locally in order for the TechMarketplace application to work. This project includes instructions on how to run the Quorum network locally.
 
 ## Requirements
 
@@ -26,14 +26,14 @@ We use Quorum as our Ethereum protocol in this project. We use a version of Quor
 ## Installation
 
 ```sh
-$ git clone https://github.com/MLH/mlh-localhost-cryptohackers.git
-$ cd mlh-localhost-cryptohackers
+$ git clone https://github.com/MLH/mlh-localhost-tech-marketplace.git
+$ cd mlh-localhost-tech-marketplace
 $ npm install
 ```
 
 ## Running
 
-To get your CryptoHackers application up and running locally, you will need to run the Quorum network, compile your contracts, migrate those contracts to the network, populate those contracts with data, then run your application:
+To get your TechMarketplace application up and running locally, you will need to run the Quorum network, compile your contracts, migrate those contracts to the network, populate those contracts with data, then run your application:
 
 ### Quorum network
 
@@ -42,7 +42,7 @@ $ docker pull mlhacks/mlh-localhost-quorum-network
 $ docker run -it -p 22000:22000 -p 22001:22001 -p 22002:22002 mlhacks/mlh-localhost-quorum-network
 ```
 
-### CryptoHackers
+### TechMarketplace
 
 ```sh
 $ truffle compile
@@ -53,7 +53,7 @@ $ npm start
 
 ## Commands
 
-Inside the CryptoHackers project, you can run some built-in commands:
+Inside the TechMarketplace project, you can run some built-in commands:
 
 ### `npm start` or `yarn start`
 

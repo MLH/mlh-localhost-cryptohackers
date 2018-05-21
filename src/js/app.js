@@ -50,9 +50,9 @@ App = {
       })
       .then(function(size) {
         for (id = 0; id < size; id++) {
-          instance.getItem(id).then(function(hackerItem) {
-            var itemEl = App.fillElement(hackerItem, itemTemplate);
-            itemEl.find(".hacker-item").attr("data-id", hackerItem[0]);
+          instance.getItem(id).then(function(marketplaceItem) {
+            var itemEl = App.fillElement(marketplaceItem, itemTemplate);
+            itemEl.find(".marketplace-item").attr("data-id", marketplaceItem[0]);
 
             itemRow.append(itemEl.html());
           });
@@ -145,7 +145,7 @@ App = {
     event.preventDefault();
     var instance;
     var button = $(event.target);
-    var card = button.closest(".hacker-item");
+    var card = button.closest(".marketplace-item");
     var itemId = card.data("id");
 
     button.toggleClass("disabled");
@@ -194,7 +194,7 @@ App = {
     event.preventDefault();
     var instance;
     var button = $(event.target);
-    var card = button.closest(".hacker-item");
+    var card = button.closest(".marketplace-item");
     var itemId = card.data("id");
 
     button.toggleClass("disabled");
@@ -244,7 +244,7 @@ App = {
       // 'Enter' keypress
       var instance;
       var name = event.target.value;
-      var card = $(event.target).closest(".hacker-item");
+      var card = $(event.target).closest(".marketplace-item");
       var itemId = card.data("id");
 
       App.contracts.Market.deployed()
