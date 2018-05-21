@@ -1,4 +1,4 @@
-# MLH Localhost: Intro to Ethereum apps Powered by Quorum
+# MLH Localhost &mdash; Blockchain Basics: An Introduction to J.P. Morgan's Quorum
 
 This repository contains the code for an example Quorum network for the **Blockchain Basics: An Introduction to J.P. Morgan's Quorum**.
 
