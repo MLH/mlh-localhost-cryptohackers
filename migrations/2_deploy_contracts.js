@@ -12,6 +12,6 @@ module.exports = function(deployer) {
         "1iTZde/ndBHvzhcl7V68x44Vx7pl8nwx9LqnM/AfJUg=", // Node two
         "oNspPPgszVUFw0qmGFfWwh1uxVUXgvBxleXORHj07g8=", // Node three
       ],
-    },
+    }
   );
 };
