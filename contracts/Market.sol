@@ -12,7 +12,7 @@ contract Market {
     string nickname;
   }
 
-  function Market(address nodeA, address nodeB, address nodeC) public {
+  constructor(address nodeA, address nodeB, address nodeC) public {
     balances[nodeA] = 10 ether;
     balances[nodeB] = 10 ether;
     balances[nodeC] = 10 ether;
@@ -22,7 +22,7 @@ contract Market {
     return balances[node];
   }
 
-  function createItem(string _name, string _image, uint256 _price) public {
+  function createItem(string memory _name, string memory _image, uint256 _price) public {
     address _owner;
     Item memory _item = Item(_owner, _name, _image, _price, "" );
     items.push(_item);
@@ -49,7 +49,7 @@ contract Market {
     return id;
   }
 
-  function setNickname(uint id, string newNickname) public returns (uint) {
+  function setNickname(uint id, string memory newNickname) public returns (uint) {
     require(id >= 0 && id <= items.length);
 
     items[id].nickname = newNickname;
@@ -61,7 +61,7 @@ contract Market {
     return items.length;
   }
 
-  function getItem(uint id) public view returns (uint, address, string, string, uint256, string) {
+  function getItem(uint id) public view returns (uint, address, string memory, string memory, uint256, string memory) {
     return (id, items[id].owner, items[id].name, items[id].image, items[id].price, items[id].nickname);
   }
 }
